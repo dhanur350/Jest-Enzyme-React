@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyComponent should match snapshot 1`] = `
+<nav
+  className="sidenav_container text-sm flex flex-justify-center"
+>
+  <div
+    className="sidenav box-shadow-navbar border-radius-1"
+  />
+</nav>
+`;
+
+exports[`Navbar Snapshot! should match snapshot 1`] = `
+<nav
+  className="sidenav_container text-sm flex flex-justify-center"
+>
+  <div
+    className="sidenav box-shadow-navbar border-radius-1"
+  />
+</nav>
+`;

@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Component Snapshot Checking if UI has changed or not 1`] = `
+<div>
+  1
+  <button
+    onClick={[Function]}
+  >
+    Click here
+  </button>
+  <div>
+    Hello
+  </div>
+</div>
+`;
+
+exports[`MyComponent should match snapshot 1`] = `
+<div>
+  1
+  <button
+    onClick={[Function]}
+  >
+    Click here
+  </button>
+  <div>
+    Hello
+  </div>
+</div>
+`;

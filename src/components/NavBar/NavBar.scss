@@ -1,0 +1,131 @@
+@import "../../styles/core/core-variables";
+@import "../../styles/core/core-border";
+
+//custom styles heights and colors for sidebar and navbar
+$sidebar-focus-text-color: #fff;
+$sidebar-focus-bgcolor:#000;
+$sidebar-width: 4.5rem;
+$navbar-padding: 0.5rem;
+$sidebar-border-radius: 1rem;
+$image-border-line :1px solid rgb(192, 190, 190);
+
+.navbar_container {
+  width: 100%;
+  max-height: 5rem;
+  height: 100%;
+  align-items: flex-end;
+  padding-bottom: $navbar-padding;
+}
+
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: #f1f1f1;
+  justify-content: space-around;
+  height: 4.5rem;
+  width: 100%;
+  max-width: 35rem;
+  padding-top: $padding-2;
+  padding-bottom: $padding-2;
+
+  .navbar_link_text {
+    display: none;
+  }
+
+  a {
+    flex-direction: column;
+    text-align: center;
+    max-width: $sidebar-width;
+
+    .navbar_icons {
+      color: gray;
+    }
+  }
+
+  a:hover {
+    align-items: center;
+    max-width: $sidebar-width;
+    cursor: pointer;
+  }
+
+    a:focus,
+    a:active,
+    a.active {
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    transition: 0.2s;
+    width: 100%;
+    max-width: 8rem;
+    border-radius: $sidebar-border-radius;
+    color: $sidebar-focus-text-color;
+    background-color: $sidebar-focus-bgcolor;
+
+    .navbar_icons {
+      visibility: visible;
+      color: white;
+    }
+    
+    .navbar_link_text {
+      display: inline;
+      background-color: $sidebar-focus-bgcolor;
+      color: $sidebar-focus-text-color;
+    }
+
+  .navbar_link_text:hover{
+    // color: blue;
+    display: inline;
+    visibility: visible;
+  }
+
+  
+  }
+
+  .icon_container {
+    padding-top: $padding-2;
+    padding-bottom: $padding-2;
+  }
+
+  .navbar_top_link:hover,
+  .navbar_top_link:active,
+  .navbar_top_link.active {
+    border-radius: $sidebar-border-radius;
+    // border-bottom-left-radius: $sidebar-border-radius;
+  }
+
+  .navbar_middle_link:hover, 
+    .navbar_middle_link:active, 
+    .navbar_middle_link.active{
+    border-radius: $sidebar-border-radius;
+  }
+
+  .navbar_bottom_link:hover, 
+    .navbar_bottom_link:active, 
+    .navbar_bottom_link.active {
+    border-radius: $sidebar-border-radius;
+    // border-bottom-right-radius: $sidebar-border-radius;
+  }
+}
+
+.focused .navbar_link_text:focus {
+  visibility: visible;
+  // font-weight: bold;
+}
+
+.logoimg {
+  border-right: $image-border-line;
+}
+
+.userlogo {
+  border-left: $image-border-line;
+}
+
+.logoimg img {
+  height: 3rem;
+}
+
+.userlogo img {
+  height: 3rem;
+  border-radius: 100%;
+}
