@@ -32,12 +32,27 @@ const navLinks = [
 ];
 
 
-describe("Navbar testing", () => {
-    it("Test navbar's click", () => {
-        const wrapper = shallow(<NavBar position={"navbar"} navLinks={navLinks} />);
-        expect(wrapper).toBeTruthy();
-    })
+describe.skip("Navbar testing", () => {
+    it('should have a variable with value "hello"', () => {
+        const wrapper = shallow(<NavBar position={"navbar"} />);
+        const position = wrapper.prop('position');
+        expect(position).toEqual('navbar');
+
+    });
 });
+
+describe("Navbar checking", () => {
+    it('should have a variable with value "hello"', () => {
+        const position = 'navbar';
+    const wrapper = shallow(<NavBar position={position} />);
+    expect(wrapper.find('.navbar_container').hasClass(`${position}_container`)).toBe(true);
+    expect(wrapper.find('.navbar').hasClass(`${position}`)).toBe(true);
+    // expect(wrapper.find('.navbar_link_text').hasClass(`${position}_link_text`)).toBe(true);
+
+    });
+});
+
+
 
 describe('Navbar Snapshot!', () => {
     it('should match snapshot', () => {

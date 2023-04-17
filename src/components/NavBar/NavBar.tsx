@@ -21,7 +21,7 @@ export interface ILinks {
 //     to?: string;
 //     handleLinkFocus: (buttonId: string) => void;
 // }
-export interface INavBarMap {
+export interface INavBar {
     position: string;
     logoImage?: string;
     userImage?: string;
@@ -29,7 +29,7 @@ export interface INavBarMap {
     navLinks?:ILinks[]
 }
 
-function NavbarMap({ position, logoImage, userImage,navLinks }: INavBarMap) {
+function Navbar({ position, logoImage, userImage,navLinks }: INavBar) {
     // console.log(links);
 
     // useMemo(() => {
@@ -73,4 +73,4 @@ function NavbarMap({ position, logoImage, userImage,navLinks }: INavBarMap) {
 
 }
 
-export default memo(NavbarMap)
+export default memo(Navbar)
