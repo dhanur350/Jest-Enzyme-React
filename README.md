@@ -1,1 +1,11 @@
-# LeaveForm_Redux_Saga
+# JEST ENZYME
+- .skip()
+- It() execute the test
+- fit() only execute this test
+- xit() discard this test
+- getByRole() 
+- childAt()
+- children()
+- key()
+- dive()
+- first()
