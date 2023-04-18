@@ -38,7 +38,7 @@ function Navbar({ position, logoImage, userImage,navLinks }: INavBar) {
 
 
     const renderNavBar = ({ label, icon, to, index }: ILinks) => {
-        console.log(label, icon, to, index);
+        // console.log(label, icon, to, index);
         return (
             <NavLink
                 key={`navbar-no.${index}`}
