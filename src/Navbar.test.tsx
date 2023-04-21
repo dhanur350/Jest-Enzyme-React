@@ -1,4 +1,4 @@
-import { shallow,configure } from "enzyme";
+import { mount, shallow } from "enzyme";
 import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import renderer from 'react-test-renderer';
@@ -76,6 +76,12 @@ describe("logoimage", () => {
         // const logoImage = ;
         expect(toHaveProp(wrapper.find("img"), "src", "../public/logo192.png")).toBeTruthy();
     })
+
+    // it("component inside component",()=>{
+    //     const nestcomponent = mount(<NavBar position="navbar"/>)
+    //     console.log(nestcomponent);
+        
+    // })
 })
 
 
